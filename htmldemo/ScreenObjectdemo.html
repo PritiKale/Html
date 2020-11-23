@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="JavaScript">
+function checkscreendetails()
+{
+  var ah=screen.availHeight;
+var aw=screen.availWidth;
+var h=screen.height;
+var w=screen.width;
+var cd=screen.colorDepth;
+var pd=screen.pixelDepth;
+document.write("<p>Avail Height="+ah);
+document.write("<p>Avail Width="+aw);
+document.write("<p>Height="+h);
+document.write("<p>Width="+w);
+document.write("<p>Color Depth="+cd);
+document.write("<p>Pixel Depth="+pd);
+}
+</script>
+</head>
+<body>
+
+<input type=button value="Check Screen Details" onclick="checkscreendetails()">
+</body>
+</html>

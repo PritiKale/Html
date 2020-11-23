@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+.frm
+{
+  border:2px solid black;
+border-radius: 10px;
+width:300px;
+height:400px;
+background-color:#ffff99;
+color:#990000;
+font-family:Andalus;
+font-size:large;
+padding:20px;
+}
+.but
+{
+padding:10px;
+border-radius:5px;
+background-color:#990000;
+color:white;
+font-weight:bold;
+}
+input[type=text]
+{
+  padding:10px;
+border-radius:5px;
+width:300px;
+}
+</style>
+<script language="JavaScript">
+function fun()
+{
+var n=document.getElementById("txtnm").value;
+alert("Welcome "+n);
+}
+</script>
+</head>
+<body>
+<h1>Register here</h1>
+<form action="" name="f1" class="frm" method="post" onsubmit="fun()">
+
+<input type=text name="txtnm" id="txtnm" placeholder="Enter name here"><br><br>
+<input type="submit" value="Submit" name="btnsub" id=btnsub class="but">
+</form>
+</body>
+</html>

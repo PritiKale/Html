@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+function showprice()
+{
+var x=document.f1.1stproduct.value;
+var t=document.f1.txtpr;
+switch(x)
+{
+case "Lux":
+t.value="10";
+break;
+case "Colgate":
+t.value="15";
+break;
+case "Rin":
+t.value="35";
+break;
+default:
+t.value="";
+}
+}
+</script>
+</head>
+<body>
+<from name=f1>
+select product
+<select name=1stproduct onchange="showprice()">
+<option value="">-----select-----</option>
+<option value="Lux">Lux</option>
+<option value="Colgate">Colgate</option>
+<option value="Rin">Rin</option>
+</select>
+<br><br>
+price<input type=text name=txtpr>
+</form>
+</body>
+</html>

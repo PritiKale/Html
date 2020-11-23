@@ -1,0 +1,33 @@
+<html>
+<body>
+<script language="JavaScript">
+var a,b,c;
+a=parseInt(prompt("Enter 1st side"));
+b=parseInt(prompt("Enter 2nd side"));
+c=parseInt(prompt("Enter 3rd side"));
+if(a>b && a>c)
+{
+ if(b+c>a)
+  document.write("<font color=green size=7>Valid</font>");
+else
+  document.write("<font color=red size=7>Invalid</font>");
+}
+else if(b>a && b>c)
+{
+ if(a+c>b)
+  document.write("<font color=green size=7>Valid</font>");
+else
+  document.write("<font color=red size=7>Invalid</font>");
+}
+else if(c>a && c>b)
+{
+  if(a+b>c)
+  document.write("<font color=green size=7>Valid</font>");
+else
+  document.write("<font color=red size=7>Invalid</font>");
+}
+else
+  document.write("<font color=green size=7>Valid</font>");
+</script>
+</body>
+</html>

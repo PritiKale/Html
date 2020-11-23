@@ -1,0 +1,16 @@
+<html>
+<head>
+<script language="JavaScript">
+function transfer()
+{
+  var x=document.getElementById("txtpath").value;
+window.location=x;
+//window.location.assign(x);
+}
+</script>
+</head>
+<body>
+<input type=text id="txtpath">
+<input type=button value="go" onclick="transfer()"><input type=button value="refresh" onclick="location.reload()">
+</body>
+</html>

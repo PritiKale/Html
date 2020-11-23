@@ -1,0 +1,100 @@
+1)simple if-
+
+if(condition)
+{
+stmts;
+}
+
+2)if else
+
+if(condition)
+{
+  stmtblock1;
+}
+else
+{
+stmtblock2;
+}
+
+3)else if
+
+if(condition1)
+ {
+ stmtblock1;
+}
+else if(condition2)
+{
+  stmblock2;
+}
+else if(conditionn)
+{
+  stmt blockn;
+}
+else
+{
+  stmtblockelse;
+}
+
+4) nested if-
+if(condition1)
+{
+  if(condition2)
+ {
+	stmtblock1;
+ }
+else
+{
+	stmtblock2;
+}
+}
+else
+{
+stmtblock3;
+}
+
+5)switch-
+
+switch(testexpr)
+{
+ case value1:
+  stmtblock1;
+break;
+case value2:
+ stmtblock2;
+break;
+case valuen:
+stmtblockn;
+break;
+default:
+stmtblocke;
+}
+
+loops-
+1)while loop-
+while(condition)
+{
+stmts;
+}
+
+2) do-while-
+
+do
+{
+stmts;
+}while(condition);
+
+3) for-
+
+for(initialization;condition;incre/decre)
+{
+ stmts;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function cal()
+{
+var h,b,a;
+h=parseFloat(document.f1.txth.value);
+b=parseFloat(document.f1.txtb.value);
+a=0.5*h*b;
+   document.f1.txta.value=a;
+}
+</script>
+</head>
+<body>
+<form name=f1 id=f1>
+<input type=text name=txth placeholder="Enter height"><br>
+<input type=text name=txtb placeholder="Enter base"><br>
+<input type=text name=txta placeholder="Area"><br>
+<input type="button" value="Calculate Area" onclick="cal()">
+</form>
+</body>
+</html>

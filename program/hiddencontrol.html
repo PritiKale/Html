@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+function show()
+{
+var v=document.f1.hd.value;
+alert("Hidden text  is "+v);
+}
+</script>
+</head>
+<body>
+<form name=f1>
+<input type=hidden value="pass 1234" name="hd">
+<input type=button value="show hidden text" onclick ="show()">
+</form>
+</body>
+</html>

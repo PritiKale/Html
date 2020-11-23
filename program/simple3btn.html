@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function cal()
+{
+var p=parseInt(document.f1.txtpr.value);
+var q=parseInt(document.f1.txtqty.value);
+var a=p*q;
+document.f1.txtamt.value=a;
+}
+</script>
+</head>
+<body>
+<form name=f1>
+<input type=text name=txtpr placeholder="enter price"><br>
+<input type=text name=txtqty placeholder="enter qty">
+<input type=button name=btncal value=calculate onclick="cal()"><br> 
+<input type=text name=txtamt placeholder="amount"><br>
+<input type=submit value=submit name=btnsub>
+<input type=reset value=reset name=btnres>
+</form>
+</body>
+</html>

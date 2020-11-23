@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function dochange()
+{
+var=i;
+for(i=0; i<document.f1.gender.length; i++)
+{
+if(document.f1.gender[i].checked)
+{
+document.f1.txtans.value="I am a"+document.f1.gender[i]value;
+}
+}
+}
+</script>
+</head>
+<body>
+<form name=f1>
+<input type=radio name=gender value=Male onclick="dochange()">Male
+<input type=radio name=gender value=Female onclick="dochange()">Female
+<input type=text name=txtans readonly size=20>
+</form>
+</body>
+</html>

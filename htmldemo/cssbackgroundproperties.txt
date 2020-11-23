@@ -1,0 +1,10 @@
+background-color:colorname or value
+background-image:url('path')
+background-repeat:repeat/ no-repeat/repeat-x/repeat-y
+background-quantity:number
+background-position:top/center/bottom  left/center/right
+background-attachment:fixed/scroll
+background-clip: border-box/padding-box
+background-origin:border-box/padding-box/content-box
+backgound-spacing:px
+background-size:px /%  px/%

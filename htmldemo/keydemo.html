@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="JavaScript">
+function fun1()
+{
+alert("key is down");
+}
+function fun2()
+{
+alert("key is press");
+}
+function fun3()
+{
+var k=event.keyCode
+if(k>=65 && k<=90)
+{
+
+}
+else if(k>=97 &&  k<=122)
+{
+
+}
+else
+{
+alert("Only alphabets are allowed");
+}
+
+}
+</script>
+</head>
+<body>
+<input type=text onkeydown="fun1()" onkeypress="fun2()" onkeyup="fun3()">
+</body>
+</html>

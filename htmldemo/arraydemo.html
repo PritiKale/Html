@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+var x=new Array;
+x[0]="images/1.jpg";
+x[1]="images/2.jpg";
+x[2]="images/3.jpg";
+var i=0;
+function show()
+{
+im.src=x[i];
+i++;
+if(i==3)
+i=0;
+}
+function callshow()
+{
+  setInterval("show()",1000);
+}
+</script>
+
+</head>
+<body onload="callshow()">
+<img id="im" width=100 height=100>
+</body>
+</html>

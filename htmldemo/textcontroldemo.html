@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+.frm
+{
+  border:2px solid black;
+border-radius: 10px;
+width:300px;
+height:400px;
+background-color:#ffff99;
+color:#990000;
+font-family:Andalus;
+font-size:large;
+padding:20px;
+}
+.but
+{
+padding:10px;
+border-radius:5px;
+background-color:#990000;
+color:white;
+font-weight:bold;
+}
+input[type=text]
+{
+  padding:10px;
+border-radius:5px;
+width:300px;
+}
+</style>
+<script language="JavaScript">
+function cal()
+{
+var n1=parseInt(document.getElementById("txtone").value);
+var n2=parseInt(document.getElementById("txttwo").value);
+var a=n1+n2;
+document.getElementById("txtans").value=a;
+}
+</script>
+</head>
+<body>
+<h1>Addition</h1>
+<form action="" name="f1" class="frm" method="post">
+<input type=text name="txtone" id="txtone" placeholder="Enter 1st number"><br><br>
+<input type=text name="txttwo" id="txttwo" placeholder="Enter 2nd number" onblur="cal()"><br><br>
+<input type=text name="txtans" id="txtans" placeholder="Addition" readonly><br><br>
+
+</form>
+</body>
+</html>

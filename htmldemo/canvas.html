@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Canvas Demo</title>
+<script type="application/x-javascript">
+function display()
+{
+  var a=document.getElementById("c1");
+if(a.getContext)
+{
+  var  d=a.getContext('2d');
+d.fillStyle="rgb(50,0,0)";
+d.fillRect(0,0,200,100);
+d.fillStyle="rgb(90,0,0)";
+d.fillRect(100,80,200,100);
+}
+}
+</script>
+</head>
+<body onload="display()">
+<canvas id="c1" width="500" height="500">
+your browser will not support canvas
+</canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+.frm
+{
+border:2px solid black;
+border-radius:10px;
+background-color:#a3f477;
+width:300px;
+padding:20px;
+font-family:Andalus;
+font-size:large;
+}
+input[type=text]
+{
+padding:10px;
+border-radius:5px;
+border:1px solid black;
+}
+.but
+{
+padding:10px;
+border-radius:10px;
+background-color:#190468;
+font-weight:bold;
+color:white;
+}
+textarea;
+{
+border:1px solid pack;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<form action="" name="f1" class="frm" method="post" >
+<fieldset>
+<legend> login here</legend>
+<input type=text name="txtnm" id="txtnm" placeholder="Enter Name" pattern="\D+"required><br><br>
+<input type=tel name="txttel" id="txttel" placeholder="Enter Telephone Number" pattern="\d{10}"required><br><br>
+<textarea name="txtadd" placeholder="Enter address"></textarea><br><br>
+<input type=submit name=btnsub id=btnsub class="btn">
+</fieldset>
+</form>
+</body>
+</html>

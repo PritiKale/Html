@@ -1,0 +1,84 @@
+functon isalpha(str)
+{
+var rx=/^[a-zA-z\s]+$/;
+if(str.match(rx))
+return true;
+else
+return false;
+}
+function isnum(str))
+if(isNaN (str))
+return false;
+else
+return true;
+}
+function ismobile(str)
+{
+if(isnum(str))
+{
+if(str.length= =10)
+return true;
+else
+return false;
+}
+function isemail(str)
+{
+var ia=str.indexOf("@");
+var lia=str.indexOf("@");
+var id=str.indexOf(".");
+var is=str.indexOf(" ");
+var len=str.index;
+var ic,isemi,icol,idou,ilt,igt,ip1,ip2;
+ic=str.indexOf(".");
+isemi=str.indexOf(";");
+icol=str.indexOf(":");
+idou=str.indexOf("\");
+ilt=str.indexOf("<");
+igt=str.indexOf(">");
+ip1=str.indexOf("(");
+ip2=str.indexOf(")");
+if(ia= = -1)
+return false;
+else if(ia!==lia)
+return false;
+else if(ia= = o|| ia= =len-1)
+return false;
+else if(ia+1= =id)
+return false;
+else if(ic!=-1||icol!=-1||idou!=-1||ilt!=-1||igt=-1||ip1=-1||ip2!=-1)
+return false;
+else
+return true;
+}
+function isdate(str)
+{
+//for mm//dd//yyyy format
+var day,month,year;
+day=str.substring(3,5);
+month=str.substring(0,2)-1;
+year=str.substring(6,12);
+if(str.charAt(2)!='/'||str.charAt(5)!='/')
+{
+alert('invalid date formate')
+return false;
+}
+var msec=(new Date (year,month,date)).getTime();
+var d=new Date();
+d.setTime(msec);
+if(d.getDate()!=day)
+{
+alert('invalid day')
+return false;
+}
+if(d.getMonth()!=month)
+{
+alert('invalid month')
+return false;
+}
+if(d.getFullYear()!=year)
+{
+alert('invalid year');
+return false;
+}
+return true;
+}

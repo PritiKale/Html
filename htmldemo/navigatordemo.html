@@ -1,0 +1,28 @@
+<html>
+<head>
+<script language="JavaScript">
+function checknavigator()
+{
+  var n=navigator.appName;
+var c=navigator.appCodeName;
+var v=navigator.appVersion;
+var p=navigator.platform;
+var co=navigator.cookieEnabled;
+var u=navigator.userAgent;
+document.write("<p>Browser Name="+n+"</p>");
+document.write("<p>Browser code Name="+c+"</p>");
+document.write("<p>Browser Version="+v+"</p>");
+document.write("<p>Browser Platform="+p+"</p>");
+document.write("<p>Cookie Enabled="+co+"</p>");
+document.write("<p>Browser User Agent="+u+"</p>");
+if(navigator.appName=="Microsoft Internet Explorer")
+document.write("You are using IE");
+else if(navigator.appName=="Netscape")
+document.write("You are using Netscape");
+}
+</script>
+</head>
+<body>
+<input type=button value="Click to know browser details" onclick="checknavigator()">
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+.frm
+{
+border:2px solid black;
+border-radius:10px;
+background-color:#a3f477;
+width:300px;
+padding:20px;
+font-family:Andalus;
+font-size:large;
+}
+input[type=text]
+{
+padding:10px;
+border-radius:5px;
+border:1px solid black;
+}
+.but
+{
+padding:10px;
+border-radius:10px;
+background-color:#190468;
+font-weight:bold;
+color:white;
+}
+textarea;
+{
+border:1px solid black;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="" name="f1" class="frm" method="post" >
+<input type=text name="txtnm" id="txtnm" placeholder="Enter Name" pattern="\D+"required><br><br>
+<input type=tel name="txttel" id="txttel" placeholder="Enter Telephone Number" pattern="\d{10}"required><br><br>
+<textarea name="txtadd" placeholder="Enter address"></textarea><br><br>
+
+<input type=url name="txturl" id="txturl" placeholder="Enter Website" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[w\.-]+)+["\w\-\.-~:
+/?#[\]@!\$&'\(\)\*\+,;=.]+$"required><br><br>
+<input type=email name="txtem" id="txtem" placeholder="Enter Id" pattern="^\w++([\.-]?\w+)*@\w+([\.-]?\w+)*(\-\w{2,3})+
+$"required><br><br>
+<input type=text name="txtnm" id="txtnm" placeholder="Enter Username" required><br><br>
+<input type=password name="txtpass" id="txtpass" placeholder="Enter Password" required><br><br>
+<input type=text list="cities">
+<datalist id="cities">
+<option value="">-----select-----</option>
+<option value="satara">satara</option>
+<option value="pune">pune</option>
+<option value="solapur">solapur</option>
+</datalist><br>
+<input type=radio name=gender value=male onclick="dochange()">male
+<input type=radio name=gender value=female onclick="dochange()">female<br><br>
+
+<input type=submit name=btnsub id=btnsub class="btn">
+<input type=reset name=btnres id=btnres class="btn">
+</form>
+</body>
+</html>
